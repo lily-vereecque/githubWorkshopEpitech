@@ -1,5 +1,5 @@
 import random
-import pygame
+import os
 from enum import Enum
 
 
@@ -86,10 +86,10 @@ if __name__ == "__main__":
     clock = pygame.time.Clock()
     
     # Colors
-    GREEN = (34, 139, 34)
+    GREEN = (0, 127, 0)
     WHITE = (255, 255, 255)
     BLACK = (0, 0, 0)
-    RED = (220, 20, 60)
+    RED = (127, 0, 0)
     GRAY = (200, 200, 200)
     
     # Fonts - use system font for Unicode support
@@ -131,7 +131,7 @@ if __name__ == "__main__":
     # Main game loop
     running = True
     message = "Welcome to Card Game! Click 'Draw Card' to begin."
-    message_timer = 0
+    message_timer = 10
     
     while running:
         clock.tick(60)
